@@ -1,6 +1,7 @@
 :root {
     --primary-color: #ba4a70;
     --secondary-color: #22abf0;
+    --tertiary-color: #3c4040;
 }
 
 * {
@@ -11,6 +12,7 @@
 
 body {
     font-family: Helvetica, Aral, sans-serif;
+    background-color: var(--secondary-color);
 }
 
 header {
@@ -73,4 +75,101 @@ section {
     height: 500px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-me h3 {
+    color: var(--secondary-color);
+    background: var(--primary-color);
+    font-size: 60px;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.about-me p {
+    font-size: 25px;
+    color: var(--tertiary-color);
+}
+
+.my-work {
+    
+}
+
+.my-work h4 {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 45px;
+}
+
+.my-work p {
+    color: var(--tertiary-color);
+    padding: 5px 15px;
+}
+
+.first-work {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+    flex-wrap: wrap;
+}
+
+.first-work img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.first-work img:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.minor-works {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-info a {
+    color: var(--tertiary-color);
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.contact-info a:hover {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.contact-me h5 {
+    font-size: 60px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 5px 15px;
+    width: auto;
+    text-align: center;
 }
