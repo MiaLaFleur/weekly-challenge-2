@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #8e8ee8;
-    --secondary-color: #3d3dd8;
-    --tertiary-color: #0c0c3d;
+    --primary-color: #e0d2f1;
+    --secondary-color: #6fc6be;
+    --tertiary-color: #3e7179;
 }
 
 * {
@@ -21,6 +21,14 @@ header {
     flex-wrap: wrap;
     background: var(--primary-color);
     padding: 20px 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    
 }
 
 header h1 {
@@ -30,9 +38,9 @@ header h1 {
 }
 
 header h1 a {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-decoration: none;
-    text-shadow: 0 0 7px rgba(61, 61, 216, 0.5);
+    text-shadow: 0 0 5px rgba(62, 113, 121, 0.5);
 }
 
 header nav {
@@ -51,8 +59,8 @@ header nav ul li a {
     font-weight: 45%;
     font-size: 27px;
     text-decoration: none;
-    color: var(--secondary-color);
-    text-shadow: 0 0 7px rgba(61, 61, 216, 0.5);
+    color: var(--tertiary-color);
+    text-shadow: 0 0 7px rgba(62, 113, 121, 0.5);
 }
 
 header nav ul li a:hover {
@@ -72,20 +80,19 @@ section {
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: bottom;
-    height: 650px;
+    height: 875px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .hero h2 {
     font-size: 50px;
-    color: #fff;
+    color: #3e7179;
     text-align: center;
 }
 
 .about-me {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .about-me img {
@@ -100,7 +107,7 @@ section {
     color: var(--secondary-color);
     background: var(--primary-color);
     font-size: 60px;
-    background-size: auto;
+
     padding: 10px 15px;
     border-radius: 15px;
 }
@@ -109,10 +116,6 @@ section {
     font-size: 25px;
     color: var(--tertiary-color);
     flex-basis: 850px;
-}
-
-.my-work {
-    
 }
 
 .my-work-header {
